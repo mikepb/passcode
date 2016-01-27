@@ -1,3 +1,14 @@
+Passcode has been merged into
+[Speakeasy 2.0](https://github.com/speakeasyjs/speakeasy)! Please update
+to Speakeasy for continuing support and updates. Speakeasy incorporates
+the following API changes from Passcode:
+
+- `options.time` and `options.epoch` are now specified in seconds instead
+  of milliseconds.
+- `url()` has been renamed to `otpauthURL()`
+- `.verify()` functions now return `true` on valid and `false` otherwise;
+  use `.verifyDelta()` to retrieve the delta from verification.
+
 # Passcode
 
 Passcode implements one-time passcode generators as standardized by the
